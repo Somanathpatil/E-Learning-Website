@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+    <header class="relative bg-gray-100 rounded-br-[50%]  md:h-[40rem] h-[30rem]">
+
+        <div class="absolute inset-0 bg-blue-950 md:rounded-br-[30%] rounded-br-[20%] opacity-80"></div>
+
+
+        <div class="relative z-10 container mx-auto">
+
+            <nav class="flex justify-between items-center p-4">
+                <h1 class="font-bold text-white text-4xl opacity-90 underline">Learn</h1>
+
+                <ul class="hidden md:flex space-x-8 text-white">
+                    <li class="hover:underline"><a href="index.html">Home</a></li>
+                    <li class="hover:underline"><a href="Cource.html">Courses</a></li>
+                    <li class="hover:underline"><a href="member.html">Membership</a></li>
+                    <li class="hover:underline"><a href="dashbord.html">Dashboard</a></li>
+                    <li class="hover:underline"><a href="contact.html">Contacts</a></li>
+                </ul>
+
+                <button type="button" class="md:hidden" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars text-white text-xl" id="menu-icon"></i>
+                </button>
+            </nav>
+
+
+            <div id="mobile-menu" class="hidden  flex-col bg-transparent text-white p-4 space-y-4">
+                <ul class="space-y-2">
+                    <li class="hover:underline"><a href="index.html">Home</a></li>
+                    <li class="hover:underline"><a href="Cource.html">Courses</a></li>
+                    <li class="hover:underline"><a href="member.html">Membership</a></li>
+                    <li class="hover:underline"><a href="dashbord.html">Dashboard</a></li>
+                    <li class="hover:underline"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+
+            <section class="md:w-1/2 flex mt-11 flex-col justify-center text-center md:text-left md:my-40">
+                <h1 class="text-white font-bold text-3xl md:text-6xl p-2">Get in Touch</h1>
+                <p class="text-white mt-3 md:mt-6 text-sm md:text-base p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo iste ullam. Accusamus,
+                    nihil.
+                </p>
+            </section>
+        </div>
+
+
+        <div class="absolute inset-0">
+            <img src="./images/cont.jpg" alt="Background"
+                class="w-full h-full md:rounded-br-[30%] rounded-br-[20%] object-cover opacity-50">
+        </div>
+    </header>
+
+    <div class="flex flex-col md:flex-row md:p-6 my-5 p-4">
+        <!-- Contact Information -->
+        <div class="flex flex-col my-3 justify-center md:items-start items-center p-4 md:w-1/2">
+            <h1 class="font-bold text-2xl sm:text-3xl text-center">Contact Us</h1>
+            <div class="flex space-x-1 p-2">
+                <p class="text-sm font-extrabold text-orange-600">&#8226;</p>
+                <p class="text-sm font-extrabold text-orange-600">&#8226;</p>
+                <p class="text-sm font-extrabold text-orange-600">&#8226;</p>
+                <p class="text-sm font-extrabold text-orange-600">&#8226;</p>
+                <p class="text-sm font-extrabold text-orange-600">&#8226;</p>
+            </div>
+            <p class="text-center md:text-start p-2 text-sm md:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui unde dignissimos nobis facere asperiores,
+                quasi sed suscipit saepe. Fugiat veniam dolorum, enim accusantium praesentium veritatis.
+            </p>
+            <div class="flex flex-col space-y-2 my-2 p-2 text-center">
+                <a href="" class="flex items-center"><i class="fa-solid fa-location-dot mr-2"></i>123 Fifth Avenue, New
+                    York, NY 10160</a>
+                <a href="" class="flex items-center"><i class="fa-solid fa-envelope mr-2"></i>contact@example.com</a>
+                <a href="" class="flex items-center"><i class="fa-solid fa-phone-volume mr-2"></i>8754367273</a>
+            </div>
+            <div class="my-2">
+                <h1 class="font-bold text-center">Keep in Touch</h1>
+                <div class="flex mt-2 space-x-5 justify-center">
+                    <a href="" class="text-xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="text-xl"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="text-xl"><i class="fa-brands fa-square-pinterest"></i></a>
+                    <a href="" class="text-xl"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="my-3 flex flex-col rounded-3xl justify-center items-center bg-white p-4 md:w-1/2">
+            <div id="Contacts" class="flex flex-col justify-center items-center mt-4 md:mt-12">
+                <h1 class="font-bold text-2xl text-center md:text-left">Have Questions?</h1>
+                <p class="text-center md:text-left p-4 text-sm md:text-base">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eos, quam voluptate explicabo earum
+                    quis.
+                </p>
+                <div class="feedback flex flex-col justify-center items-center w-full">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-md">
+                        <input type="hidden" name="access_key" value="f3785161-0007-4c35-b948-b93c8c6e3931">
+                        <input
+                            class="bg-white border-2 border-red-500 p-3 rounded-xl m-2 w-full hover:scale-105 transition-transform duration-300 text-black"
+                            type="text" name="fname" id="name" placeholder="Enter Your Name" required /><br>
+                        <input
+                            class="bg-white border-2 border-red-500 p-3 rounded-xl m-2 w-full hover:scale-105 transition-transform duration-300 text-black"
+                            type="email" name="email" id="email" placeholder="Enter Your Email" required /><br>
+                        <input
+                            class="bg-white border-2 border-red-500 p-3 rounded-xl m-2 w-full hover:scale-105 transition-transform duration-300 text-black"
+                            type="text" name="subject" id="subject" placeholder="Enter Your Subject" required /><br>
+                        <textarea
+                            class="bg-white border-2 border-red-500 p-3 rounded-xl m-2 w-full hover:scale-105 transition-transform duration-300 text-black"
+                            name="message" id="message" cols="30" rows="4" placeholder="Enter Your Message"
+                            required></textarea><br>
+                        <div
+                            class="bg-orange-400 hover:bg-orange-500 flex items-center justify-center p-3 font-bold text-lg rounded-2xl hover:scale-105 transition-transform duration-300">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Contacts -->
+    <div class="bg-gray-300 p-2 flex justify-center items-center flex-col mt-4">
+        <div class="font-bold text-3xl mt-6 flex justify-center text-center items-center">
+            <h1>Join Our Community</h1>
+        </div>
+        <div class="my-9">
+            <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
+        </div>
+        <div class="my-6">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                    <div class="flex justify-center items-center  ">
+                        <input class="p-2 sm:w-72 md:w-80" type="email" id="email" name="email"
+                            placeholder="Enter your email" /><br>
+
+                    </div>
+
+                    <div class="flex justify-center items-center  my-4">
+                        <button class="p-2 bg-orange-400 rounded-xl hover:bg-orange-500"><a
+                                href="">Subscribe</a></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="bg-white justify-center items-center mt-5 md:flex md:flex-wrap">
+            <div class="flex flex-col justify-center items-center md:justify-evenly md:w-[30%]">
+                <h1 class="underline text-4xl font-bold text-blue-400 my-3">Learn</h1>
+                <p class="p-2 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque et,
+                    doloremque reiciendis corrupti officiis vel harum ex maiores repellendus ab vero fuga praesentium
+                    minima.
+                </p>
+                <div class="flex space-x-5 mb-5">
+                    <ul>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </ul>
+                    <ul>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </ul>
+                    <ul>
+                        <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+                    </ul>
+                    <ul>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center md:w-[30%] my-5">
+                <h1 class="text-2xl font-bold opacity-85">
+                    Popular Courses
+                </h1>
+                <ul class="flex flex-col my-4 space-y-1 cursor-pointer">
+                    <li class="hover:text-blue-400">LMS Interactive Content</li>
+                    <li class="hover:text-blue-400">Become a PHP Master</li>
+                    <li class="hover:text-blue-400">HTML5/CSS3 Essentials</li>
+                    <li class="hover:text-blue-400">JavaScript Development</li>
+                    <li class="hover:text-blue-400">WordPress Basic Tutorial</li>
+                    <li class="hover:text-blue-400">Introduction to Coding</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-center items-center md:w-[30%] my-5">
+                <h1 class="text-2xl font-bold opacity-85">
+                    Popular Courses
+                </h1>
+                <div class="flex flex-col justify-center items-center p-2 my-1">
+                    <h3 class="font-bold my-1">Address</h3>
+                    <p>123 Fifth Avenue, New York, NY</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center p-2 my-1">
+                    <h3 class="font-bold my-1">Phone</h3>
+                    <p>929-242-6868</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center p-2 my-1">
+                    <h3 class="font-bold my-1">Email</h3>
+                    <p>contact@info.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="p-1 bottom-0 flex justify-center items-center -mt-3 md:mt-0">
+        <div>
+            <p>Copyright © 2025 E-LEARNING </p>
+        </div>
+    </div>
+
+    <!-- Js section -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        }
+    </script>
+</body>
+
+</html>
